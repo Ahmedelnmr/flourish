@@ -1,0 +1,137 @@
+@import url("style.css");
+
+header {
+    background-color: var(--sec-color);
+    position: sticky;
+}
+
+.account {
+    min-height: 100vh;
+    background-color: var(--gray2-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+}
+
+.account .account-details {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 20px;
+    /* padding: 10px; */
+    width: 100%;
+    height: 100%;
+}
+
+.account-details .side {
+    width: 350px;
+    background-color: var(--sec-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.account-details .side img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.account-details .side h1 {
+    font-size: 30px;
+    color: var(--dark-color);
+}
+
+.account-details .side form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.account-details .side form a {
+    font-size: 22px;
+    color: var(--main-color);
+    font-weight: bold;
+    transition: .4s;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 2px solid var(--gray2-color);
+    border-radius: 10px;
+}
+
+.account-details .side form a:hover {
+    background-color: var(--gray2-color);
+}
+
+.account-details .side form button {
+    background-color: var(--thd-color);
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: var(--sec-color);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.account-details .side form button:hover {
+    background-color: #bb3643;
+}
+
+.account-details .details {
+    max-width: 700px;
+    flex: 1;
+    background-color: var(--sec-color);
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    /* text-align: center; */
+    gap: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.account-details .details .detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.account-details .details .detail:not(:last-child) {
+    border-bottom: 2px solid var(--gray2-color);
+}
+
+.account-details .details .detail h1 {
+    font-size: 25px;
+    color: var(--dark-color);
+}
+
+@media (max-width: 800px) {
+    .account .account-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .account-details .side {
+        flex: 1 !important;
+        width: 100% !important;
+    }
+    .account-details .details {
+        flex: 1 !important;
+        width: 100% !important;
+    }
+
+
+}

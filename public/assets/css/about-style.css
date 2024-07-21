@@ -1,0 +1,20 @@
+@import url("style.css");
+
+.landing {
+    background-image: url("../imgs/a3.jpg");
+    /* min-height: 90vh; */
+    background-position: bottom;
+}
+
+header .desktop ul li a {
+    color:black var(--sec-color);
+    /* text-shadow: 10px 10px var(--dark-color); */
+}
+
+header .desktop .dd::after {
+    border-color: var(--sec-color) transparent transparent;
+}
+
+header .desktop .settings a {
+    color: var(--dark-color);
+}

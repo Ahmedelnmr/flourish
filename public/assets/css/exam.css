@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+    direction: rtl;
+    /* font-family: "Noto Kufi Arabic", sans-serif; */
+}
+
+:root {
+    --main-color: #2878eb;
+    --sec-color: #ffffff;
+    --thd-color: #f14d5d;
+    --thd2-color: #e43f4f;
+    --yellow-color: #ffc107;
+    --green-color: #28a745;
+    --dark-color: #120F2D;
+    --dark-main: #215cae;
+    --gray-color: #787878;
+    --gray2-color: #e4e4e4;
+    --background-color: #2879ebd4;
+    --background-gray: #f1f1f1;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.exam {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    gap: 20px;
+    background-color: var(--sec-color);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 600px;
+    flex: 1;
+}
+
+.exam .header {
+    padding: 10px;
+    border-bottom: 2px solid var(--gray2-color);
+    width: 100%;
+}
+
+.exam .header h1 {
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.exam .question {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.exam .question h1 {
+    font-size: 30px;
+    color: var(--dark-color);
+}
+
+.exam .question .answer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-color);
+    cursor: pointer;
+}
+
+.exam .question .answer label {
+    cursor: pointer;
+}
+
+.exam .question .answer input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.exam .answers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exam .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;      
+    width: 100%;
+    padding: 10px;
+    border-top: 2px solid var(--gray2-color);
+}
+
+.exam .footer button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: var(--main-color);
+    color: var(--sec-color);
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.exam .footer button:last-child {
+    justify-items: end;
+}
+
+.show {
+    display: block !important;
+}

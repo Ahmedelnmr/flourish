@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+    direction: rtl;
+    /* font-family: "Noto Kufi Arabic", sans-serif; */
+}
+
+:root {
+    --main-color: #2878eb;
+    --sec-color: #ffffff;
+    --thd-color: #f14d5d;
+    --thd2-color: #e43f4f;
+    --yellow-color: #ffc107;
+    --green-color: #28a745;
+    --dark-color: #120F2D;
+    --dark-main: #215cae;
+    --gray-color: #787878;
+    --gray2-color: #e4e4e4;
+    --background-color: #2879ebd4;
+    --background-gray: #f1f1f1;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.score {
+    background-color: var(--sec-color);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    flex: 1;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.score h1 {
+    color: var(--dark-color);
+    font-size: 30px;
+}
+
+.score h1 span:first-child {
+    color: var(--main-color);
+}
+
+.score a {
+    background-color: var(--main-color);
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--sec-color);
+    font-size: 20px;
+}
